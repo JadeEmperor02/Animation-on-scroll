@@ -45,6 +45,8 @@ a {
 }
 .main-header h1 span {
   color: #0d9cb5;
+  -webkit-animation: colorChange 6s ease infinite forwards;
+          animation: colorChange 6s ease infinite forwards;
 }
 
 img {
@@ -73,6 +75,59 @@ img {
           order: 2;
 }
 
+@-webkit-keyframes colorChange {
+  0%, 100% {
+    color: #0d9cb5;
+  }
+  25% {
+    color: #0d1eb5;
+  }
+  35% {
+    color: gold;
+  }
+  45% {
+    color: #770db5;
+  }
+  50% {
+    color: #b50d9f;
+  }
+  75% {
+    color: #0db5b5;
+  }
+  85% {
+    color: #0da1b5;
+  }
+  95% {
+    color: #000;
+  }
+}
+
+@keyframes colorChange {
+  0%, 100% {
+    color: #0d9cb5;
+  }
+  25% {
+    color: #0d1eb5;
+  }
+  35% {
+    color: gold;
+  }
+  45% {
+    color: #770db5;
+  }
+  50% {
+    color: #b50d9f;
+  }
+  75% {
+    color: #0db5b5;
+  }
+  85% {
+    color: #0da1b5;
+  }
+  95% {
+    color: #000;
+  }
+}
 .btn {
   display: inline-block;
   background: #000;
